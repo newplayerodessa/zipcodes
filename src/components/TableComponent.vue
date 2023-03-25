@@ -105,6 +105,10 @@ export default {
     if (this.$route.query.zips) {
       await this.$store.dispatch('GET_QUERIES_FROM_API', this.$route.query.zips)
     }
+  },
+  unmounted() {
+    this.$store.commit('CLEAN_ZIP_STATE')
+    this.$router.replace({'zip': null});
   }
 
 }

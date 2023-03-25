@@ -15,6 +15,9 @@ export default {
 
         REMOVE_ZIP_FROM_STATE(state, obj) {
             this.state.zipcode.zipcodes = this.state.zipcode.zipcodes.filter(item => item.postal_code !== obj)
+        },
+        CLEAN_ZIP_STATE() {
+            this.state.zipcode.zipcodes = []
         }
     },
 
