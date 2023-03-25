@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply flex items-center justify-center px-4 text-white bg-gray-800 font-medium text-xs uppercase;
+    }
+    .btn-chip {
+        @apply flex items-center rounded px-2 py-2 text-white font-semibold bg-gray-800 text-xs uppercase;
+    }
+    .th-row {
+        @apply border-b-2 border-gray-800 bg-gray-800 text-left text-xs font-semibold text-white uppercase tracking-wider;
+    }
+    .tb-row {
+        @apply bg-white even:bg-gray-100
+    }
+    .nav {
+        @apply flex justify-between bg-white border-gray-200 px-4 lg:px-6 py-2.5
+    }
+    .nav__body {
+        @apply flex flex-wrap justify-between items-center mx-auto max-w-screen-xl;
+    }
+    .nav__logo {
+        @apply self-center text-xl font-semibold whitespace-nowrap;
+    }
+    .nav__link {
+        @apply flex items-center py-1 px-4 text-xs font-semibold text-white rounded bg-gray-800;
+    }
+}

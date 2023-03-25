@@ -1,14 +1,8 @@
 import { createStore } from 'vuex'
+import zipcode from "@/store/modules/zipcode";
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    modules: {
+        zipcode
+    }
 })

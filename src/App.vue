@@ -1,30 +1,19 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <header>
+    <nav class="nav">
+      <router-link active-class="logo-active" class="nav__logo" to="/">Logo</router-link>
+      <div class="flex font-sm space-x-2">
+        <router-link class="nav__link" to="/">Home</router-link>
+        <router-link class="nav__link" to="/zips">Zip Codes</router-link>
+      </div>
+    </nav>
+  </header>
+  <div class="max-w-2xl mx-auto px-4 pt-5">
+    <router-view/>
+  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+
